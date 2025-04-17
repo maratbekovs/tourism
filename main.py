@@ -268,7 +268,7 @@ async def language_callback_handler(callback_query: CallbackQuery):
 async def show_main_menu(message_or_callback, user_id: int):
     """Отображает главное меню (не удаляет предыдущие сообщения)."""
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text=get_translation(user_id, "view_tours"), url="https://maratbekov.me/")],
+        [InlineKeyboardButton(text=get_translation(user_id, "view_tours"), url="https://wordtravel.local/")],
         [InlineKeyboardButton(text=get_translation(user_id, "book_tour"), callback_data="book_tour")],
         [InlineKeyboardButton(text=get_translation(user_id, "contact_us"), callback_data="contact_us")],
         [InlineKeyboardButton(text=get_translation(user_id, "faq"), callback_data="faq")]
